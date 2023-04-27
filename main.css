@@ -1,0 +1,217 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+    list-style: none; 
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: absolute;
+    display: flex; 
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li *{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+header ul li {
+    position: relative;
+}
+header ul li:after{
+    content: "";
+    position: absolute;
+    background-color:  #c46c14;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+header ul li:hover{
+    color: rgb(255, 0, 0);
+}
+header ul li:hover:after{
+    width: 100%;
+}
+
+
+
+/* content */
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    min-width: 600px;
+}
+.content .textBox h2{
+    color: #333;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span{
+    color: #c46c14;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{color: #333;}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #c46c14;
+    color: #000;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox{
+    width: 400px;
+    display: flex;
+    padding-right: 10px;
+    justify-content: flex-end;
+}
+.content .imgBox img{
+    min-width: 400px;
+    transform: rotate(-15deg);
+}
+
+/* thumb */
+.thumb{
+    position: fixed;
+    right: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5%;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    min-width: 100px;
+    transform: rotate(-15deg);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #c46c14;
+    clip-path: circle(700px at right 800px);
+}
+.our{
+    text-align: center;
+}
+/* products */
+.section-p1{
+    text-align: center;
+}
+#product1 h1 {
+    text-align: center;
+    position: absolute;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    /* flex-wrap: wrap; */
+}
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .uno{
+    text-align: center;
+    padding: 10px 0;
+}
+#product1 .pro .uno span{
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .uno h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .uno .star{
+    font-size: 12px;
+    color: yellow;
+}
+#product1 .pro .uno h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: blue;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: blue;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+
